@@ -1,7 +1,7 @@
 steps:
   # Build app
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-f', 'golang/go-cloud-run-hello-world/Dockerfile', '-t', 'asia-northeast1-docker.pkg.dev/$PROJECT_ID/my-repo/hello:$COMMIT_SHA', '.']
+    args: ['build', '-f', 'golang/go-cloud-run-hello-world/Dockerfile', '-t', 'asia-northeast1-docker.pkg.dev/$PROJECT_ID/my-repo/hello:$COMMIT_SHA', './golang/go-cloud-run-hello-world']
     id: BUILD
 
   # Storage of the image
