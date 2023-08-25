@@ -19,7 +19,6 @@ steps:
       - 'asia-northeast1-docker.pkg.dev/$PROJECT_ID/my-repo/hello:$COMMIT_SHA'
       - '--region'
       - 'asia-northeast1'
-      - 'platform'
-      - 'managed'
+      - 'platform=managed'
       - '--allow-unauthenticated'
     id: DEPLOY
