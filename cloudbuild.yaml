@@ -1,0 +1,6 @@
+steps:
+  # Build app
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'asia-northeast1-docker.pkg.dev/$PROJECT_ID/my-repo/hello:$COMMIT_SHA', '.']
+    id: BUILD
+
