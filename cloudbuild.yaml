@@ -4,3 +4,9 @@ steps:
     args: ['build', '-t', 'asia-northeast1-docker.pkg.dev/$PROJECT_ID/my-repo/hello:$COMMIT_SHA', '.']
     id: BUILD
 
+  # Storage of the image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'asia-northeast1-docker.pkg.dev/$PROJECT_ID/my-repo/hello:$COMMIT_SHA', '.']
+    id: STORAGE
+
+
