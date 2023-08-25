@@ -23,6 +23,3 @@ steps:
       - 'managed'
       - '--allow-unauthenticated'
     id: DEPLOY
-
-
-
